@@ -17,18 +17,11 @@
 
 
 ## Features
-- Feature 1
-- Feature 2
-- Feature 3
+- Dynamic Search
+- Local Storage using Hive
+- Api Data fetch 
 
 ## Installation
-Instructions to install the app...
+Download or Clone the project in Device 
 
-## Usage
-How to use the app...
 
-## Contributing
-Guidelines for contributing...
-
-## License
-License information...

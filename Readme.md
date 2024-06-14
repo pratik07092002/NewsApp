@@ -9,25 +9,25 @@
 
 ## Screenshots
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
 
-  <div style="flex: 1; min-width: 45%;">
+  <div style="flex: 1; min-width: 45%; margin-bottom: 20px;">
     <img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home1.jpg" alt="Home Screen" style="width: 100%;">
   </div>
   
-  <div style="flex: 1; min-width: 45%;">
+  <div style="flex: 1; min-width: 45%; margin-bottom: 20px;">
     <img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home2.jpg" alt="Home Screen" style="width: 100%;">
   </div>
   
-  <div style="flex: 1; min-width: 45%;">
+  <div style="flex: 1; min-width: 45%; margin-bottom: 20px;">
     <img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home3.jpg" alt="Home Screen" style="width: 100%;">
   </div>
   
-  <div style="flex: 1; min-width: 45%;">
+  <div style="flex: 1; min-width: 45%; margin-bottom: 20px;">
     <img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home4.jpg" alt="Home Screen" style="width: 100%;">
   </div>
   
-  <div style="flex: 1; min-width: 45%;">
+  <div style="flex: 1; min-width: 45%; margin-bottom: 20px;">
     <img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home5.jpg" alt="Home Screen" style="width: 100%;">
   </div>
 

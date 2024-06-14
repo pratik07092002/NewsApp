@@ -9,19 +9,12 @@
 
 ## Screenshots
 
-![Home Screen](https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home1.jpg, width = 400)
-<br>
+<img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home1.jpg" alt="Home Screen" width="400"/>
+<img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home2.jpg" alt="Home Screen" width="400"/>
+<img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home3.jpg" alt="Home Screen" width="400"/>
+<img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home4.jpg" alt="Home Screen" width="400"/>
+<img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home5.jpg" alt="Home Screen" width="400"/>
 
-![Home Screen](https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home2.jpg)
-<br>
-
-![Home Screen](https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home3.jpg)
-<br>
-
-![Home Screen](https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home4.jpg)
-<br>
-
-![Home Screen](https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home5.jpg)
 
 ## Features
 - Feature 1

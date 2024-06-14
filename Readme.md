@@ -9,33 +9,26 @@
 
 ## Screenshots
 
-![Home Screen](https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home1.jpg)
-<br>
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
 
-![Home Screen](https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home2.jpg)
-<br>
+  <div style="flex: 1; min-width: 45%;">
+    <img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home1.jpg" alt="Home Screen" style="width: 100%;">
+  </div>
+  
+  <div style="flex: 1; min-width: 45%;">
+    <img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home2.jpg" alt="Home Screen" style="width: 100%;">
+  </div>
+  
+  <div style="flex: 1; min-width: 45%;">
+    <img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home3.jpg" alt="Home Screen" style="width: 100%;">
+  </div>
+  
+  <div style="flex: 1; min-width: 45%;">
+    <img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home4.jpg" alt="Home Screen" style="width: 100%;">
+  </div>
+  
+  <div style="flex: 1; min-width: 45%;">
+    <img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home5.jpg" alt="Home Screen" style="width: 100%;">
+  </div>
 
-![Home Screen](https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home3.jpg)
-<br>
-
-![Home Screen](https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home4.jpg)
-<br>
-
-![Home Screen](https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home5.jpg)
-
-## Features
-- Feature 1
-- Feature 2
-- Feature 3
-
-## Installation
-Instructions to install the app...
-
-## Usage
-How to use the app...
-
-## Contributing
-Guidelines for contributing...
-
-## License
-License information...
+</div>

@@ -9,7 +9,7 @@
 
 ## Screenshots
 
-![Home Screen](https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home1.jpg)
+![Home Screen](https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home1.jpg, width = 400)
 <br>
 
 ![Home Screen](https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home2.jpg)

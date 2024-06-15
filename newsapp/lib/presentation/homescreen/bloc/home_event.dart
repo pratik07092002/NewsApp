@@ -33,3 +33,4 @@ class BookmarkClickEvent extends HomeEvent{
 
   BookmarkClickEvent({required this.author, required this.title, required this.desc, required this.imageurl, required this.content, required this.url, required this.date});
 }
+class LoadBookmarksEvent extends HomeEvent{}

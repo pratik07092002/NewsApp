@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => HomeBloc()..add(HomeUpdateEvent()),
+      create: (context) => HomeBloc()..add(HomeUpdateEvent())..add(LoadBookmarksEvent()),
       child: HomePageView(),
     );
   }
@@ -56,6 +56,7 @@ class _HomePageViewState extends State<HomePageView> {
                       itemCount: articles.length,
                       itemBuilder: (context, index) {
                         final article = articles[index];
+                        final isBookmarked = state.bookmarkedArticles[article.url] ?? false;
                         return Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: ListTile(
@@ -77,26 +78,17 @@ class _HomePageViewState extends State<HomePageView> {
                                   ),
                             trailing: IconButton(
                               onPressed: () async {
-  final hiveArticle = Article(
-    author: article.author,
-    title: article.title,
-    description: article.description,
-    url: article.url,
-    urlToImage: article.urlToImage,
-    publishedAt: article.publishedAt,
-    content: article.content,
-  );
 
-  final box = await Hive.openBox<Article>('articles');
-  await box.add(hiveArticle);
-
-  ScaffoldMessenger.of(context).showSnackBar(
-    SnackBar(
-      content: Text('Article bookmarked!'),
-    ),
-  );
+  context.read<HomeBloc>().add(BookmarkClickEvent(author: article.author,
+   title: article.title,
+    desc: article.description,
+     imageurl: article.urlToImage.toString(),
+      content: article.content,
+       url: article.url,
+        date: article.publishedAt));
+  
                               },
-                              icon: Icon(Icons.bookmark, color: Colors.red),
+                              icon: isb(isBookmarked)
                             ),
                             onTap: () {
                               showModalBottomSheet(
@@ -129,6 +121,14 @@ class _HomePageViewState extends State<HomePageView> {
         },
       ),
     );
+  }
+
+  Icon isb(bool bookmark){
+if(bookmark){
+  return Icon(Icons.bookmark , color: Colors.red,);
+}else{
+  return Icon(Icons.bookmark_border , color: Colors.red,);
+}
   }
 }
 

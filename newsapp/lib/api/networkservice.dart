@@ -13,7 +13,6 @@ class NetworkService {
       print("Response status: ${resp.statusCode}");
       if (resp.statusCode == 200) {
         final body = jsonDecode(resp.body);
-        print("Response body: $body");
 
         ArticleModel articleModel = ArticleModel.fromJson(body);
         return [articleModel];

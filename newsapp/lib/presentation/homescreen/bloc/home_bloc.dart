@@ -1,7 +1,9 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:hive/hive.dart';
 import 'package:newsapp/api/networkservice.dart';
+import 'package:newsapp/model/article.dart';
 import 'package:newsapp/model/articlemod.dart';
 import 'package:newsapp/utils/status.dart';
 
@@ -15,6 +17,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
     on<HomeUpdateEvent>(_fetchdata);
     on<SearchTextEvent>(_searchNews);
     on<BookmarkClickEvent>(_bookmarks );
+    on<LoadBookmarksEvent>(_loadBookmarks);
   }
 
   FutureOr<void> _fetchdata(HomeEvent event, Emitter<HomeState> emit) async {
@@ -64,12 +67,57 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
       msgi: "Search results updated",
     ));
   }
+ Future<void> _loadBookmarks(LoadBookmarksEvent event, Emitter<HomeState> emit) async {
+    final box = await Hive.openBox<Article>('articles');
+    final Map<String, bool> bookmarkedArticles = {};
 
-  FutureOr<void> _bookmarks(BookmarkClickEvent event, Emitter<HomeState> emit) async{
+    for (var article in box.values) {
+      bookmarkedArticles[article.url!] = true;
+    }
 
+    emit(state.CopyWith(bookmarkedArticles: bookmarkedArticles, statussi: Statuss.loaded));
+  }
+ FutureOr<void> _bookmarks(BookmarkClickEvent event, Emitter<HomeState> emit) async {
+  final box = await Hive.openBox<Article>('articles');
+  bool checkurl = box.values.any((element) => element.url == event.url);
 
+  print("box data: ${box.get(1)}");
+
+  if (!checkurl) {
+    // Article does not exist, add it
+    final hiveArticle = Article(
+      author: event.author,
+      title: event.title,
+      description: event.desc,
+      url: event.url,
+      urlToImage: event.imageurl,
+      publishedAt: event.date,
+      content: event.content,
+    );
+    await box.add(hiveArticle);
+    print("Hive Article: ${hiveArticle}");
+    
+    final newBookmarkedArticles = Map<String, bool>.from(state.bookmarkedArticles)
+      ..[event.url.toString()] = true;
+
+    emit(state.CopyWith(bookmarkedArticles: newBookmarkedArticles));
+  } else {
+    // Article exists, remove it
+    final key = box.keys.firstWhere(
+      (key) => box.get(key)?.url == event.url,
+      orElse: () => -1,
+    );
+    print("Key is: ${key}");
+    if (key != -1) {
+      await box.delete(key);
+    }
+    
+    final newBookmarkedArticles = Map<String, bool>.from(state.bookmarkedArticles)
+      ..[event.url.toString()] = false;
+
+    emit(state.CopyWith(bookmarkedArticles: newBookmarkedArticles));
   }
 }
 
-class BookemarkedEvent {
 }
+

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hive/hive.dart';
-import 'package:newsapp/model/article.dart';
 import 'package:newsapp/presentation/NewsDetailsScreen/NewsDetailsScreen.dart';
 import 'package:newsapp/presentation/homescreen/bloc/home_bloc.dart';
 import 'package:newsapp/utils/status.dart';
@@ -22,9 +20,17 @@ class HomePageView extends StatefulWidget {
   _HomePageViewState createState() => _HomePageViewState();
 }
 
-class _HomePageViewState extends State<HomePageView> {
+class _HomePageViewState extends State<HomePageView> with SingleTickerProviderStateMixin {
   TextEditingController _searchcontroller = TextEditingController();
-
+ late AnimationController _animationController;
+@override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _animationController = AnimationController(vsync: this , duration: Duration(seconds: 1) ,
+    reverseDuration: Duration(milliseconds: 600)
+     );
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -92,6 +98,7 @@ class _HomePageViewState extends State<HomePageView> {
                             ),
                             onTap: () {
                               showModalBottomSheet(
+                                transitionAnimationController: _animationController,
                                 context: context,
                                 builder: (context) => Container(
                                   height: MediaQuery.of(context).size.height * 0.95,

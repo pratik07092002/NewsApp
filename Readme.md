@@ -2,7 +2,7 @@
 
 ## Video Demo
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+[Watch the Screen Recording](https://github.com/pratik07092002/NewsApp/blob/main/newsapp/screenshots/ScreenRecord.mp4)
 
 ## Screenshots
 

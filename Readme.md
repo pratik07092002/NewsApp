@@ -12,7 +12,7 @@
 <img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home1.jpg" alt="Home Screen" width="400"/>
 <img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home2.jpg" alt="Home Screen" width="400"/>
 <img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home3.jpg" alt="Home Screen" width="400"/>
-<img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home4.jpg" alt="Home Screen" width="400"/>
+<img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home4.png" alt="Home Screen" width="400"/>
 <img src="https://raw.githubusercontent.com/pratik07092002/NewsApp/main/newsapp/screenshots/Home5.jpg" alt="Home Screen" width="400"/>
 
 

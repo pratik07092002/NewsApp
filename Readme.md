@@ -2,10 +2,7 @@
 
 ## Video Demo
 
-<video width="600" controls>
-  <source src="https://github.com/pratik07092002/NewsApp/blob/main/newsapp/screenshots/ScrenRecord.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
 
 ## Screenshots
 

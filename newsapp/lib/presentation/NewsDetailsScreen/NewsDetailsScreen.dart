@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart'; // Import intl for date formatting
+import 'package:intl/intl.dart'; 
 import 'package:newsapp/utils/imagegetter.dart';
 import 'package:url_launcher/link.dart';
 

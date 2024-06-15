@@ -110,7 +110,7 @@ class _HomePageViewState extends State<HomePageView> {
                                     title: article.title.toString(),
                                     desc: article.description.toString(),
                                     imageurl: article.urlToImage.toString(),
-                                    content: article.description.toString(),
+                                    content: article.content,
                                   ),
                                 ),
                                 isScrollControlled: true,

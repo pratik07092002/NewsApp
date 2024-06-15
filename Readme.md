@@ -2,7 +2,8 @@
 
 ## Video Demo
 
-[Watch the Screen Recording](https://github.com/pratik07092002/NewsApp/blob/main/newsapp/screenshots/ScreenRecord.mp4)
+[Watch the Screen Recording](https://drive.google.com/file/d/1-BPGZ7wdev-58H5UFv54KLZlPnQ4saiT/view?usp=drive_link)
+
 
 ## Screenshots
 
